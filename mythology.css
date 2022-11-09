@@ -1,3 +1,4 @@
+/* menginsert font yang di download */
 @font-face {
     font-family: "norse";
     src: url(Heorot-4rLK.ttf);
@@ -5,6 +6,8 @@
 body{
     background-color: black;
 }
+
+/* navbar */
 .navbar{
     font-family: 'norse';
 }
@@ -15,7 +18,9 @@ body{
     border-radius: 100px;
 }
 
-.intro::after {
+/* Intro */
+/* memberi layer hitam pada image*/
+.intro-ragnarok::after {
     content:"";
     position: absolute;
     width: 100%; 
@@ -26,16 +31,17 @@ body{
     left: 0;
     top: 0px;
   }
-.intro{
+.intro-ragnarok{
     position:relative;
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
-.overlay{
+/* overlay untuk text pada image*/
+.overlay-ragnarok{
     text-align: center;
     font-size: 30px;
     padding: 20px;
@@ -43,33 +49,74 @@ body{
     color: white;
     z-index: 2;
 }
-.overlay h1{
+.overlay-ragnarok h1{
     font-size: 6rem;
     font-family: 'norse';
 }
-.video-container{
+.img-ragnarok{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* ragnarok cause */
+/* memberi layer hitam pada video*/
+.ragnarokcause::after {
+    content:"";
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    background-color:rgba(10,10,10,0.5);
+    align-items: center;
+    z-index: 1;
+    left: 0;
+    top: 0px;
+  }
+.ragnarokcause{
+    position:relative;
+    width: 100%;
+    height: 99vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+/* overlay untuk text pada video*/
+.overlay-cause{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    margin: 15px;
+    color: white;
+    z-index: 2;
+}
+.overlay-cause h1{
+    font-size: 6rem;
+    font-family: 'norse';
+}
+.vid-ragnarok{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-.carousel-caption{
-    background-color:rgba(10,10,10,0.5);
-    align-items: center;
-    z-index: 1;
-    border-radius: 100px;
-}
-
-.isi{
+/* ragnarok signs */
+.ragnaroksigns{
     padding: 50px;
 }
-.norse_saga{
-    font-family: norse;
+/* judul */
+.signs-heading{
+    font-family: 'norse';
     text-align: center;
     padding-bottom: 30px;
     color: white;
 }
+
+
+/* card */
 .card{
     background-color: black;
     color: white;
@@ -78,49 +125,23 @@ body{
 .card img{
     border-radius: 20px;
 }
+.card img:hover{
+    transform: scale(1.05);
+}
 
-.characters::after{
-    content:"";
-    position: absolute;
-    width: 100%; 
-    height: 100%;
-    background-color:rgba(10,10,10,0.5);
-    align-items: center;
-    z-index: 0;
-    left: 0;
-    top: 0px;
+/* ragnarok */
+.ragnarok{
+    padding: 50px;
 }
-.characters{
-    position:relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-.img-container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.characters-overlay{
-    z-index: 2;
-    color: white;
-    text-align: center;
-}
-.characterslide{
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-.charactertitle h1{
+/* heading */
+.ragnarok-heading{
     font-family: norse;
-    padding: 20px;
-    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 30px;
+    color: white;
 }
 
+/* footer */
 .left-column{
     float: left;
     width: 50%;
